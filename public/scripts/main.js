@@ -20,6 +20,7 @@ const requestNotificationPermission = async () => {
 }
 
 const sendLocalNotification = (title = "title", msg = "Default message") => {
+    console.log("sending local notification ...")
     let options = {
         body: msg,
         icon: './icons/test.svg',

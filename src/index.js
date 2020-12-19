@@ -30,6 +30,7 @@ const sendNotification = (subscription, dataToSend = '') => {
 const dummyDb = { subscription: null } //dummy in memory store
 const saveToDatabase = async subscription => {
     dummyDb.subscription = subscription
+    console.log(subscription)
 }
 // The new /save-subscription endpoint
 app.post('/save-subscription', async (req, res) => {
